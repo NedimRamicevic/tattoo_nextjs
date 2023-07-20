@@ -10,7 +10,7 @@ function Banner() {
     //     </div>
     // </div>
     <div className=' w-full justify-center flex'>
-        <Image src="/icons/logo.svg" width={700} height={700} />
+        <Image src="https://cdn1.ntv.com.tr/gorsel/33zcTShTfkCxr22gDaMvbA.jpg?width=660&mode=both&scale=both" width={700} height={700} />
     </div>
   )
 }
