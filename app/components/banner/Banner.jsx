@@ -9,8 +9,8 @@ function Banner() {
     //         <Image src="/icons/logo.svg" width={150} height={150} className=" rounded-full"/>
     //     </div>
     // </div>
-    <div className=' w-full justify-center flex'>
-        <Image src="https://cdn1.ntv.com.tr/gorsel/33zcTShTfkCxr22gDaMvbA.jpg?width=660&mode=both&scale=both" width={700} height={700} />
+    <div className='w-full justify-center flex'>
+        <img className=" object-fill h-full w-full" src="https://cdn1.ntv.com.tr/gorsel/33zcTShTfkCxr22gDaMvbA.jpg?width=660&mode=both&scale=both"  />
     </div>
   )
 }
