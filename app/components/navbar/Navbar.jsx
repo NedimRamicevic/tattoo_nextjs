@@ -21,17 +21,17 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full shadow-sm sticky top-0 bg-black">
+    <div className="tracking-widest w-full shadow-sm sticky top-0 bg-black">
         <div className="p-2 flex flex-row justify-between text-2xl">
             <div className="nav_container flex w-3/4 md:w-1/5 flex-row justify-center items-center ">
-            <div className="nav_items ">
+            <div className="nav_items text-2xl ">
               <Link href="/">ISTANBUL</Link>
               </div>
             </div>
             
             <div className="nav_container w-2/5 hidden md:flex md:flex-row justify-around items-center">
-              <div className="nav_items hover:bg-gray-700 rounded-lg p-2">
-                <Link href="/About">About</Link>
+              <div className="termina nav_items hover:bg-gray-700 rounded-lg p-2">
+                <Link className="termina" href="/About">About</Link>
               </div>
               <div className="nav_items hover:bg-gray-700 rounded-lg p-2">
               <Link href="/Gallery">Gallery</Link>
