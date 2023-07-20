@@ -21,8 +21,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full shadow-sm">
-        <div className="p-8 flex flex-row justify-between text-2xl">
+    <div className="w-full shadow-sm sticky top-0 bg-black">
+        <div className="p-2 flex flex-row justify-between text-2xl">
             <div className="nav_container flex w-3/4 md:w-1/5 flex-row justify-center items-center ">
             <div className="nav_items ">
               <Link href="/">ISTANBUL</Link>
