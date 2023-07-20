@@ -43,18 +43,7 @@ async function ArtistPage({ params}) {
     )
 }
 
-export async function getStaticPaths() {
-    const res = await fetch(`http://localhost:3000/api/artists/`,
-    {
-        cache: "no-store",
-    }
-    )
-    const data = await res.json()
-    const paths = data.map((artist) => ({
-        params: { id: artist._id },
-        }))
-    return { paths, fallback: false }
-}
+
 
 
 
