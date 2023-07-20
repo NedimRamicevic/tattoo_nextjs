@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 async function Artists({data}) {
@@ -15,6 +16,7 @@ async function Artists({data}) {
 
     {await data.map((artist) => (
       <div className="group space-y-4 cursor-pointer ">
+        <Link href={`/Artists/${artist._id}`}>
         <div className="flex justify-end">
           <span className="inline-flex items-center rounded-md bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-800 absolute mt-1.5 z-10 opacity-70 group-hover:opacity-100 transition duration-250 ease-out cursor-pointer">Resident</span>
         </div>
@@ -33,6 +35,7 @@ async function Artists({data}) {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo non quaerat illum tempore! Perferendis quis officiis, porro veritatis consequatur quae animi in aperiam officia quia? Consectetur eaque doloribus possimus.
           </p>
       </div>
+      </Link>
   </div>
     ))}
     </div>

@@ -15,13 +15,13 @@ function Tattoos({data}) {
     <div 
     onMouseEnter={() => setHovered(true)}
     onMouseLeave={() => setHovered(false)}
-    className={`grid grid-cols-2 mt-12 md:grid-cols-3 transition-all duration-700 gap-y-11 ${hovered ? '' : ''}`}>
+    className={`grid grid-cols-2 py-24 pb-40 md:grid-cols-3 bg-white transition-all gap-y-10`}>
     {data ? (data.map((image, index) => {
       return (
-        <div key={index} className={`gallery-image transition-all flex flex-col items-center`}>
+        <div key={index} className={`gallery-image transition-all flex flex-col items-center overflow-hidden `}>
           <Image
         
-            className={`tattoo-image max-w-full h-auto rounded-md object-cover duration-1000 ${hovered ? (index)%2 == 0 ?' translate-y-36' : 'translate-y-28' : '' }`}
+            className={`tattoo-image max-w-full h-auto rounded-md object-cover duration-2000 shadow-2xl drop-shadow-2xl ${!hovered ? (index)%2 == 0 ?' translate-y-52' : 'translate-y-32  ' : '' }`}
             key={index}
             src={image.url}
             alt="gallery"

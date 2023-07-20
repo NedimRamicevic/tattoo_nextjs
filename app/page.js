@@ -14,7 +14,7 @@ async function fetchTattoos() {
 async function Home() {
   const tattoos = await fetchTattoos();
   return (
-    <div className="flex flex-col w-full gap-40">
+    <div className="flex flex-col w-full">
       <Banner />
       <Tattoos data={tattoos} />
       <ArtistsPage />

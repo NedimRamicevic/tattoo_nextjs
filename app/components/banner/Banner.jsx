@@ -10,7 +10,7 @@ function Banner() {
     //     </div>
     // </div>
     <div className='w-full justify-center flex'>
-        <img className=" object-fill h-full w-full" src="https://cdn1.ntv.com.tr/gorsel/33zcTShTfkCxr22gDaMvbA.jpg?width=660&mode=both&scale=both"  />
+        <img className=" object-fill h-auto w-full" src="https://cdn1.ntv.com.tr/gorsel/33zcTShTfkCxr22gDaMvbA.jpg?width=660&mode=both&scale=both"  />
     </div>
   )
 }
